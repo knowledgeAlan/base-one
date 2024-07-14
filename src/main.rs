@@ -25,6 +25,7 @@ fn main() {
     println!("Hello, world!");
 
     if let Err(err) = read_csv() {
+        // comment
         print!("error running reader csv :{}",err);
         process::exit(1);
     }
