@@ -27,8 +27,8 @@ fn read_csv() -> Result<(),Box<dyn Error>> {
 fn main() {
     println!("Hello, world!");
 
-    if let Err(err) = read_csv() {
-        print!("error running reader csv :{}",err);
-        process::exit(1);
-    }
+    // if let Err(err) = read_csv() {
+    //     print!("error running reader csv :{}",err);
+    //     process::exit(1);
+    // }
 }
