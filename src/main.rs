@@ -1,6 +1,9 @@
-use std::{error::Error,process};
+mod base64_test;
+use std::{ error::Error, process, str::from_utf8_mut};
 
+ 
 use csv::Reader;
+use base64_test::*;
 
 struct Row {
     title:String,
@@ -25,7 +28,6 @@ fn main() {
     println!("Hello, world!");
 
     if let Err(err) = read_csv() {
-        // comment
         print!("error running reader csv :{}",err);
         process::exit(1);
     }
