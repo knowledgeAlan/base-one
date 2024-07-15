@@ -31,4 +31,7 @@ fn main() {
     //     print!("error running reader csv :{}",err);
     //     process::exit(1);
     // }
+
+    encodeBase64String();
+    decodeBase64String();
 }
