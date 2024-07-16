@@ -32,6 +32,9 @@ fn main() {
     //     process::exit(1);
     // }
 
-    encodeBase64String();
-    decodeBase64String();
+   let str_base64= encodeBase64String("test");
+   println!("str_base64==={}",str_base64);
+   let res =decodeBase64String(&str_base64);
+
+    println!("res==={}",res)
 }
